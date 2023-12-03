@@ -1,7 +1,13 @@
-export default function Home() {
-  return (
-    <div>
-      <h1>Hello from the index page.</h1>
-    </div>
-  );
+import { getServerSession } from "next-auth";
+import { authOptions } from "./utils/auth";
+import { redirect } from "next/navigation";
+
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+
+  if (!session) {
+    return redirect("/login");
+  }
+
+  return redirect("/home");
 }
