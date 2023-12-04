@@ -1,6 +1,6 @@
 import { authOptions } from "@/app/utils/auth";
-import GithubLoginButton from "@/components/GithubLoginButton";
-import GoogleLoginButton from "@/components/GoogleLoginButton";
+import GithubLoginButton from "@/app/components/GithubLoginButton";
+import GoogleLoginButton from "@/app/components/GoogleLoginButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { getServerSession } from "next-auth";
