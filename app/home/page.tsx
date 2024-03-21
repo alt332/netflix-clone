@@ -1,4 +1,4 @@
-import MovieVideo from "@/app/components/MovieVideo";
+import MovieVideo from "@/app/components/MovieBanner";
 import RecentlyAdded from "../components/RecentlyAdded";
 
 export default function HomePage() {
